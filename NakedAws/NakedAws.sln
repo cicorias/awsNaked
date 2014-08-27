@@ -14,10 +14,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefreshRt53", "RefreshRt53\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefreshRt53.Tests", "RefreshRt53.Tests\RefreshRt53.Tests.csproj", "{8A74061D-5909-4E06-8219-16E191B50641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSSDK_DotNet45", "..\AWSSDK_DotNet45\AWSSDK_DotNet45.csproj", "{5685EFE3-7072-4DE9-9895-E89C1FB2C5B6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSSDK_DotNet35", "..\AWSSDK_DotNet35\AWSSDK_DotNet35.csproj", "{40E91E2D-70F3-463D-9E3E-408AE2A70BA8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,14 +26,6 @@ Global
 		{8A74061D-5909-4E06-8219-16E191B50641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8A74061D-5909-4E06-8219-16E191B50641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A74061D-5909-4E06-8219-16E191B50641}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5685EFE3-7072-4DE9-9895-E89C1FB2C5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5685EFE3-7072-4DE9-9895-E89C1FB2C5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5685EFE3-7072-4DE9-9895-E89C1FB2C5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5685EFE3-7072-4DE9-9895-E89C1FB2C5B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40E91E2D-70F3-463D-9E3E-408AE2A70BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40E91E2D-70F3-463D-9E3E-408AE2A70BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40E91E2D-70F3-463D-9E3E-408AE2A70BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40E91E2D-70F3-463D-9E3E-408AE2A70BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
