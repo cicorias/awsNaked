@@ -1,0 +1,74 @@
+/*
+ * Copyright 2010-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License").
+ * You may not use this file except in compliance with the License.
+ * A copy of the License is located at
+ * 
+ *  http://aws.amazon.com/apache2.0
+ * 
+ * or in the "license" file accompanying this file. This file is distributed
+ * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
+using System.Text;
+using System.IO;
+
+using Amazon.Runtime;
+using Amazon.Runtime.Internal;
+
+namespace Amazon.EC2.Model
+{
+    /// <summary>
+    /// Container for the parameters to the ImportKeyPair operation.
+    /// <para>Imports the public key from an RSA key pair that you created with a third-party tool. Compare this with CreateKeyPair, in which AWS
+    /// creates the key pair and gives the keys to you (AWS keeps a copy of the public key). With ImportKeyPair, you create the key pair and give
+    /// AWS just the public key. The private key is never transferred between you and AWS.</para> <para>For more information about key pairs, see <a
+    /// href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" >Key Pairs</a> in the <i>Amazon Elastic Compute Cloud User
+    /// Guide</i> .</para>
+    /// </summary>
+    public partial class ImportKeyPairRequest : AmazonEC2Request
+    {
+        private string keyName;
+        private string publicKeyMaterial;
+
+
+        /// <summary>
+        /// A unique name for the key pair.
+        ///  
+        /// </summary>
+        public string KeyName
+        {
+            get { return this.keyName; }
+            set { this.keyName = value; }
+        }
+
+        // Check to see if KeyName property is set
+        internal bool IsSetKeyName()
+        {
+            return this.keyName != null;
+        }
+
+        /// <summary>
+        /// The public key. You must base64 encode the public key material before sending it to AWS.
+        ///  
+        /// </summary>
+        public string PublicKeyMaterial
+        {
+            get { return this.publicKeyMaterial; }
+            set { this.publicKeyMaterial = value; }
+        }
+
+        // Check to see if PublicKeyMaterial property is set
+        internal bool IsSetPublicKeyMaterial()
+        {
+            return this.publicKeyMaterial != null;
+        }
+
+    }
+}
+    
