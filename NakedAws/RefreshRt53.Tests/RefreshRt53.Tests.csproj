@@ -55,10 +55,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\temp\AWS\aws-sdk-net-master\AWSSDK_DotNet45\AWSSDK_DotNet45.csproj">
-      <Project>{5685efe3-7072-4de9-9895-e89c1fb2c5b6}</Project>
-      <Name>AWSSDK_DotNet45</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RefreshRt53\RefreshRt53.csproj">
       <Project>{fe9374ee-5fef-44f1-bb3c-496bb8a7aff4}</Project>
       <Name>RefreshRt53</Name>
@@ -66,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="appSettings.user" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
